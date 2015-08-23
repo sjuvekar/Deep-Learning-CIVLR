@@ -51,3 +51,4 @@ while true do
 	test()
 end
 
+dofile 'output'
