@@ -12,6 +12,10 @@ if not testData then
 	}	
 end
 
+if model then
+	testData.y = model:forward(testData.data)
+end
+
 local csvfile = csvigo.File("output/submission.csv", "w", separator)
 
 -- Write header
